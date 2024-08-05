@@ -1,4 +1,4 @@
-class Environment {
+class EnvironmentBAY {
   def certName
   def caPath
 
