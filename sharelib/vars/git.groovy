@@ -4,4 +4,4 @@ def commitHash() {
 
 def commitMessage() {
     sh(script: "(git log -1 --pretty=%B)", returnStdout: true)
-}
+}x
