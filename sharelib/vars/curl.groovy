@@ -9,7 +9,7 @@ def curlCommand(
       def curlCmd = "curl -X ${method} https://dummyjson.com/test"
       sh(script: dockerCmd, returnStdout: true).trim()
     } catch (Exception e) {
-      log.debug(e)
+      log.error(e)
       error(e.toString())
     }
 }
